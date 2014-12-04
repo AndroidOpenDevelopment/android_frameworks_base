@@ -2167,4 +2167,6 @@
   <java-symbol type="bool" name="config_softap_extention" />
 
   <java-symbol type="bool" name="config_enable_mms_with_mobile_data_off" />
+
+  <java-symbol type="array" name="config_sms_convert_destination_number_support" />
 </resources>
