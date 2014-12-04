@@ -2019,14 +2019,10 @@
         <item>Trying to delete contacts</item>
         <item>Trying to delete call log</item>
         <item>Trying to turn on mobile data</item>
-
     </string-array>
 
     <!-- Configuartion to support ESN Tracker -->
     <bool name="config_telephony_ESN_Tracker_enabled">false</bool>
-
-    <!-- Whether cpu boost is enabled for overscroller fling. -->
-    <bool name="config_enableCpuBoostForOverScrollerFling">false</bool>
 
     <!-- Configuration to enable non-default PDP during IWLAN -->
     <bool name="config_feature_iwlan_enabled">false</bool>
