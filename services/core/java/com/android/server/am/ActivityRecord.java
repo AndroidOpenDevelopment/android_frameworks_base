@@ -62,8 +62,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 
-import org.codeaurora.Performance;
-
 /**
  * An entry in the history stack, representing an activity.
  */
@@ -926,10 +924,6 @@ final class ActivityRecord {
         synchronized(service) {
             if (displayStartTime != 0) {
                 reportLaunchTimeLocked(SystemClock.uptimeMillis());
-            }
-            if(mStackSupervisor.mIsPerfLockAcquired == true) {
-                mStackSupervisor.mPerf.perfLockRelease();
-                mStackSupervisor.mIsPerfLockAcquired = false;
             }
             mStackSupervisor.sendWaitingVisibleReportLocked(this);
             startTime = 0;
